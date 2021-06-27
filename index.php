@@ -37,7 +37,7 @@ if(isset($_POST['form1'])) {
     
 }
 ?>
-
+<?php include "admin/datosdemo.php"; ?>
 
 <!doctype html>
 <html class="no-js" lang="">
@@ -45,7 +45,7 @@ if(isset($_POST['form1'])) {
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Xmee | Login and Register Form Html Templates</title>
+	<title><?php echo "$TituloSitio"; ?></title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
@@ -72,19 +72,19 @@ if(isset($_POST['form1'])) {
 				<div class="col-md-6 col-12 fxt-bg-gradient">
 					<div class="fxt-header">
 						<div class="fxt-top-content">
-							<div class="fxt-transformY-50 fxt-transition-delay-1">
+						<!--	<div class="fxt-transformY-50 fxt-transition-delay-1">
 								<a href="login-25.html" class="fxt-logo"><img src="img/logo-25.png" alt="Logo"></a>
-							</div>
+							</div> -->
 							<div class="fxt-transformY-50 fxt-transition-delay-2">
-								<h1>Welcome To xmee</h1>
+								<h1>Inter<strong>ZONE</strong></h1>
 							</div>
 							<div class="fxt-transformY-50 fxt-transition-delay-3">
-								<p>Grursus mal suada faci lisis Lorem ipsum dolarorit more ametion consectetur elit. Vesti at bulum nec odio aea the dumm ipsumm ipsum that dolocons rsus mal suada.</p>
+								<p></p>
 							</div>
 						</div>
 						<div class="fxt-bottom-content">
 							<div class="fxt-transformY-50 fxt-transition-delay-4">
-								<h2>Login With</h2>
+								<h2>INGRESA USANDO</h2>
 							</div>
 							<ul class="fxt-socials">
 								<li class="fxt-facebook fxt-transformY-50 fxt-transition-delay-6">
@@ -103,9 +103,9 @@ if(isset($_POST['form1'])) {
 									<a href="#" title="pinterest"><i class="fab fa-pinterest-p"></i></a>
 								</li>
 							</ul>
-							<div class="fxt-transformY-50 fxt-transition-delay-11">
+						<!--	<div class="fxt-transformY-50 fxt-transition-delay-11">
 								<p>Don't have an account?<a href="register-25.html" class="switcher-text inline-text">Register</a></p>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -114,7 +114,7 @@ if(isset($_POST['form1'])) {
 					<div class="fxt-content">
 						<div class="fxt-form">
 							<div class="fxt-transformY-50 fxt-transition-delay-12">
-								<h2>Login into your account</h2>
+								<h2>INGRESA TUS CREDENCIALES DE ACCESO</h2>
 							</div>
 
                         <?php  if( (isset($error_message)) && ($error_message!='') ):
@@ -138,7 +138,7 @@ if(isset($_POST['form1'])) {
 							<form action="" method="post">
 								<div class="form-group">
 									<div class="fxt-transformY-50 fxt-transition-delay-14">
-										<input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
+										<input type="email" class="form-control" name="email" placeholder="Ingresa tu correo" required="required">
 									</div>
 								</div>
 								<div class="form-group">
